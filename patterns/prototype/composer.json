@@ -1,0 +1,28 @@
+{
+  "name": "prototype/prototype",
+  "type": "project",
+  "description": "Learning Patterns Project",
+  "keywords": [
+      "php"
+  ],
+  "license": "Novecento",
+  "config": {
+      "discard-changes": true,
+      "optimize-autoloader": true,
+      "preferred-install": "dist",
+      "sort-packages": true
+  },
+  "autoload": {
+      "psr-4": {
+          "Models\\": "Models/"
+      },
+      "classmap": [
+          "Models"
+      ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "autoload-dump": "composer dump-autoload"
+  }
+}
