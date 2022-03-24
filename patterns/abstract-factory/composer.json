@@ -1,0 +1,33 @@
+{
+  "name": "abstract-factory/abstract-factory",
+  "type": "project",
+  "description": "Learning Patterns Project",
+  "keywords": [
+      "php"
+  ],
+  "license": "Novecento",
+  "config": {
+      "discard-changes": true,
+      "optimize-autoloader": true,
+      "preferred-install": "dist",
+      "sort-packages": true
+  },
+  "autoload": {
+      "psr-4": {
+          "Factories\\": "Factories/",
+          "Interfaces\\": "Interfaces/",
+          "Units\\": "Units/"
+      },
+      "classmap": [
+          "Factories",
+          "Interfaces/Units",
+          "Units/Alien",
+          "Units/Zombie"
+      ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "autoload-dump": "composer dump-autoload"
+  }
+}
